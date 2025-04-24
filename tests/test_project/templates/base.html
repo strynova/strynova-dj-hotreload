@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strynova Django Hot Reload Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        h1 {
+            color: #333;
+        }
+        .content {
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #777;
+            font-size: 0.9em;
+        }
+    </style>
+    <!-- Load the hot reload JavaScript -->
+    {% load strynova_hot_reload %}
+    {% hot_reload_js %}
+</head>
+<body>
+    <header>
+        <h1>Strynova Django Hot Reload Test</h1>
+    </header>
+    
+    <div class="content">
+        <p>Welcome to the Strynova Django Hot Reload test project!</p>
+        <p>This page demonstrates the hot reload functionality. Try making changes to this template and see the page reload automatically.</p>
+        <p>Here are some things you can try:</p>
+        <ul>
+            <li>Change the text in this template</li>
+            <li>Modify the CSS styles</li>
+            <li>Add new HTML elements</li>
+        </ul>
+    </div>
+    
+    <footer>
+        Strynova Django Hot Reload
+    </footer>
+</body>
+</html>
