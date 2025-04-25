@@ -79,6 +79,6 @@ STRYNOVA_HOT_RELOAD_INTERVAL = 1.0  # Default
 
 ## Requirements
 
-- Django >= 5.1.8
+- Django >= 3.2
 - Python 3
 - websockets package (installed automatically)
